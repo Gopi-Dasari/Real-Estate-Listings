@@ -125,6 +125,151 @@ nav a:hover {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2rem;
 }
+.property-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.property-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.property-image {
+    position: relative;
+    height: 250px;
+    background: #e0e0e0;
+    overflow: hidden;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.property-card:hover .property-image img {
+    transform: scale(1.05);
+}
+
+.property-status {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.for-sale {
+    background: var(--secondary);
+    color: white;
+}
+
+.for-rent {
+    background: var(--gold);
+    color: var(--dark);
+}
+
+.sold {
+    background: var(--accent);
+    color: white;
+}
+
+.property-price {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.property-details {
+    padding: 1.5rem;
+}
+
+.property-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    color: var(--primary);
+}
+
+.address {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.property-features {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+
+.property-features span {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.property-agent {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.agent-avatar {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.agent-name {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.agent-company {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.view-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.view-btn:hover {
+    background: #2980b9;
+    transform: scale(1.02);
+}
 
 /* Footer */
 footer {
