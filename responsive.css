@@ -1,0 +1,79 @@
+/* ========================================
+   RESPONSIVE DESIGN - ENHANCEMENTS
+   ======================================== */
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Tablet */
+@media (max-width: 768px) {
+    .property-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .filter-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-btn {
+        text-align: center;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 480px) {
+    .hero {
+        min-height: 100vh;
+        padding: 1rem;
+    }
+    
+    .property-details h3 {
+        font-size: 1.1rem;
+    }
+    
+    .property-features {
+        gap: 0.5rem;
+    }
+    
+    .property-features span {
+        font-size: 0.8rem;
+    }
+    
+    .agent-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .hero {
+        min-height: auto;
+        padding: 2rem;
+    }
+    
+    .property-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    .filter-section,
+    .load-more,
+    .newsletter {
+        display: none;
+    }
+}
