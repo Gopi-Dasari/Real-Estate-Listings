@@ -279,3 +279,48 @@ footer {
     padding: 2rem;
     margin-top: 2rem;
 }
+.filter-section {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.filter-btn {
+    padding: 0.6rem 1.5rem;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    background: transparent;
+    color: var(--dark);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.filter-btn.active {
+    background: var(--secondary);
+    color: white;
+    border-color: var(--secondary);
+}
+
+.filter-sort {
+    margin-left: auto;
+    padding: 0.6rem 1.5rem;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    background: transparent;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+/* CSS-only filtering (no JS) */
+/* We'll use checkbox hack for filtering */
